@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="main__logo">
+            <a href="" class="main__logo-link">
+              <img src="img/svg/main_logo.svg" alt="" class="main__logo-img" />
+            </a>
+          </div>
+          <div class="header__links">
+            <a href="" class="header__link">Советник</a>
+            <a href="" class="header__link text__yellow-uderline"
+              >Мой портфель</a
+            >
+            <a href="" class="header__link">Криптовалюта</a>
+            <a href="" class="header__link">Тарифы</a>
+            <a href="" class="header__link">Faq</a>
+          </div>
+          <div class="header__menus">
+            <div class="header__language">
+              <div class="select">
+                <div class="select__placeholder">
+                  <div class="select__placeholder-text">Русский</div>
+                  <div class="select__placeholder-ico-wrapper">
+                    <div class="select__placeholder-ico"></div>
+                  </div>
+                </div>
+
+                <div class="select__options">
+                  <div class="select__option-wrapper">
+                    <input
+                      class="select__radio"
+                      type="radio"
+                      id="ru"
+                      name="language"
+                    />
+                    <label
+                      for="ru"
+                      class="select__option"
+                      onclick="select_language(this)"
+                      >Русский</label
+                    >
+                  </div>
+                  <div class="select__option-wrapper">
+                    <input
+                      class="select__radio"
+                      type="radio"
+                      id="en"
+                      name="language"
+                    />
+                    <label
+                      for="en"
+                      class="select__option"
+                      onclick="select_language(this)"
+                      >English</label
+                    >
+                  </div>
+                  <div class="select__option-wrapper">
+                    <input
+                      class="select__radio"
+                      type="radio"
+                      id="de"
+                      name="language"
+                    />
+                    <label
+                      for="de"
+                      class="select__option"
+                      onclick="select_language(this)"
+                      >Deutch</label
+                    >
+                  </div>
+                  <div class="select__option-wrapper">
+                    <input
+                      class="select__radio"
+                      type="radio"
+                      id="pl"
+                      name="language"
+                    />
+                    <label
+                      for="pl"
+                      class="select__option"
+                      onclick="select_language(this)"
+                      >Polski</label
+                    >
+                  </div>
+                  <div class="select__option-wrapper">
+                    <input
+                      class="select__radio"
+                      type="radio"
+                      id="br"
+                      name="language"
+                    />
+                    <label
+                      for="br"
+                      class="select__option"
+                      onclick="select_language(this)"
+                      >Беларуская</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__login">
+              <img src="img/svg/ui/user.svg" alt="" class="header__login-img" />
+              <div class="header__login-links">
+                <a href="" class="login__link">Вход</a>
+                <div class="header__login-separator">|</div>
+                <a href="" class="login__link">Регистрация</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="starter">
+      <div class="container">
+        <div class="starter__wrapper">
+          <div class="starter__content-text">
+            <h1 class="starter__header-text">
+              Учёт и контроль<br /><span class="text__blue"
+                >ваших инвестиций</span
+              >
+            </h1>
+            <ul class="starter__content-list">
+              <li class="starter__content-item">Следите за портфелем</li>
+              <li class="starter__content-item">
+                Добавляйте купленные акции, анализируйте доходность
+              </li>
+              <li class="starter__content-item">
+                Доступно для акций и ETF NYSE, NASDAQ, Санкт-Петербургской биржи
+                и ММВБ
+              </li>
+            </ul>
+            <div class="starter__button">
+              <button class="button__blue">
+                Попробовать 30 дней бесплатно
+              </button>
+            </div>
+          </div>
+          <div class="starter__content-img">
+            <img src="img/svg/starter_img.svg" alt="" class="starter__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="excel">
+      <div class="container">
+        <div class="excel__wrapper">
+          <div class="excel__header">
+            <div class="header__text-def">
+              Интеллектуальная замена Excel<br />и отчетам брокера
+            </div>
+          </div>
+          <div class="excel__text">
+            <div class="content__text">
+              Просто добавляйте сделки с
+              <span class="text__bold">акциями</span> - ваш доход рассчитается
+              автоматически. Следите за вашим портфелем, изучайте подробную
+              <span class="text__bold">аналитику</span> и получайте важные
+              оповещения
+              <span class="text__yellow-uderline">с любого устройства</span>
+            </div>
+          </div>
+          <div class="excel__img-wrapper">
+            <img src="img/svg/excel_img.svg" alt="" class="excel__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="toinvestor">
+      <div class="container">
+        <div class="toinvestor__wrapper">
+          <div class="toinvestor__header">
+            <div class="header__text-def">Для любого инвестора</div>
+          </div>
+          <div class="toinvestor__text">
+            <div class="content__text">
+              Только купили свою первую акцию или совершаете десятки сделок в
+              день -
+              <a href="" class="contact__link text__bold">Beatmarket</a>
+              поможет вам контролировать инвестиции
+            </div>
+          </div>
+          <div class="toinvestor__cards">
+            <div class="vert__cards toinvestor-vert__cards">
+              <div class="vert__card toinvestor-vert__card">
+                <div class="vert__img-wrapper toinvestor__img-wrapper">
+                  <img
+                    src="img/svg/toinvestor_cards/1.svg"
+                    alt=""
+                    class="card__img"
+                  />
+                </div>
+                <div class="vert__content toinvestor__card-content">
+                  <div class="vert__header">
+                    <h2 class="card__header-text toinvestor__header-text">
+                      Начинающий
+                    </h2>
+                  </div>
+                  <div class="vert__text">
+                    <div class="content__text toinvestor__content-text">
+                      Удобный интерфейс и
+                      <span class="text__bold">никаких сложных формул</span> -
+                      сервис рассчитает всё необходимое
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card toinvestor-vert__card">
+                <div class="vert__img-wrapper toinvestor__img-wrapper">
+                  <img
+                    src="img/svg/toinvestor_cards/2.svg"
+                    alt=""
+                    class="card__img"
+                  />
+                </div>
+                <div class="vert__content toinvestor__card-content">
+                  <div class="vert__header">
+                    <h2 class="card__header-text toinvestor__header-text">
+                      Опытный
+                    </h2>
+                  </div>
+                  <div class="vert__text">
+                    <div class="content__text toinvestor__content-text">
+                      Ведите учет дивидендов и купонных выплат,
+                      <span class="text__bold">сравнивайте доходность</span>
+                      вашего портфеля
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card toinvestor-vert__card">
+                <div class="vert__img-wrapper toinvestor__img-wrapper">
+                  <img
+                    src="img/svg/toinvestor_cards/3.svg"
+                    alt=""
+                    class="card__img"
+                  />
+                </div>
+                <div class="vert__content toinvestor__card-content">
+                  <div class="vert__header">
+                    <h2 class="card__header-text toinvestor__header-text">
+                      Профессионал
+                    </h2>
+                  </div>
+                  <div class="vert__text">
+                    <div class="content__text toinvestor__content-text">
+                      <span class="text__bold">Настраивайте таблицы</span> под
+                      себя, экспортируйте данные в Excel и делитесь портфелем с
+                      другими
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="toinvestor__button">
+            <button class="button__blue">Попробовать 30 дней бесплатно</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="easy">
+      <div class="container">
+        <div class="easy__wrapper">
+          <div class="easy__header">
+            <h1 class="header__text-def">Почему с нами удобно</h1>
+          </div>
+          <div class="easy__cards horisontal__cards">
+            <div class="horis__card">
+              <div class="horis__content">
+                <div class="horis__header">
+                  <div class="horis__header-text">
+                    Начните всего за пару минут
+                  </div>
+                </div>
+                <div class="horis__text">
+                  <div class="content__text">
+                    <p>
+                      В пару кликов добавьте все свои сделки. Остальное
+                      платформа
+                      <span class="text__bold">рассчитает автоматически.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="horis__content-img-wrapper">
+                <div class="horis__img-wrapper">
+                  <img
+                    src="img/svg/easy_cards/1.svg"
+                    alt=""
+                    class="horis__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="horis__card">
+              <div class="horis__content">
+                <div class="horis__header">
+                  <div class="horis__header-text">
+                    Начните всего за пару минут
+                  </div>
+                </div>
+                <div class="horis__text">
+                  <div class="content__text">
+                    <p>
+                      Наблюдайте за доходностью ваших бумаг и их долей в
+                      портфеле. Изучайте графики, оценивайте прибыль и комиссии.
+                    </p>
+                    <p>
+                      Теперь каждая копейка
+                      <span class="text__bold">под вашим контролем.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="horis__content-img-wrapper">
+                <div class="horis__img-wrapper">
+                  <img
+                    src="img/svg/easy_cards/2.svg"
+                    alt=""
+                    class="horis__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="horis__card">
+              <div class="horis__content">
+                <div class="horis__header">
+                  <div class="horis__header-text">
+                    Начните всего за пару минут
+                  </div>
+                </div>
+                <div class="horis__text">
+                  <div class="content__text">
+                    <p>
+                      Хотите видеть курсовую доходность или дивидендную?
+                      Диаграмму или таблицу?
+                    </p>
+                    <p>
+                      <span class="text__bold">Гибкий и простой интерфейс</span>
+                      позволит просматривать те данные, которые нужны именно вам
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="horis__content-img-wrapper">
+                <div class="horis__img-wrapper">
+                  <img
+                    src="img/svg/easy_cards/3.svg"
+                    alt=""
+                    class="horis__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="horis__card">
+              <div class="horis__content">
+                <div class="horis__header">
+                  <div class="horis__header-text">
+                    Начните всего за пару минут
+                  </div>
+                </div>
+                <div class="horis__text">
+                  <div class="content__text">
+                    <p>
+                      Получайте оповещения о выплатах и добавляйте их в сделки.
+                    </p>
+                    <p>
+                      Оценивайте дивидендную доходность акций и
+                      <span class="text__bold"
+                        >не пропускайте купонные выплаты</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="horis__content-img-wrapper">
+                <div class="horis__img-wrapper">
+                  <img
+                    src="img/svg/easy_cards/4.svg"
+                    alt=""
+                    class="horis__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="horis__card">
+              <div class="horis__content">
+                <div class="horis__header">
+                  <div class="horis__header-text">
+                    Начните всего за пару минут
+                  </div>
+                </div>
+                <div class="horis__text">
+                  <div class="content__text">
+                    <p>
+                      <span class="text__bold"
+                        >Сделайте портфель публичным</span
+                      >
+                      и выберите только то, что хотите показать окружающим.
+                      Вставьте баннер с показателями портфеля в ваш блог
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="horis__content-img-wrapper">
+                <div class="horis__img-wrapper">
+                  <img
+                    src="img/svg/easy_cards/5.svg"
+                    alt=""
+                    class="horis__img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trust">
+      <div class="container">
+        <div class="trust__wrapper">
+          <div class="trust__header">
+            <h1 class="header__text-def">Почему нам доверяют</h1>
+          </div>
+          <div class="turst__cards">
+            <div class="vert__cards trust-vert__cards">
+              <div class="vert__card trust-vert__card">
+                <div class="vert__img-wrapper trust__img-wrapper">
+                  <img
+                    src="img/svg/turst_cards/1.svg"
+                    alt=""
+                    class="card__img"
+                  />
+                </div>
+                <div class="vert__content trust__card-content">
+                  <div class="vert__header trust__header-wrapper">
+                    <h2 class="card__header-text trust__header-text">
+                      Более 3 лет работы
+                    </h2>
+                  </div>
+                  <div class="vert__text trust__content-text">
+                    <div class="content__text">
+                      Более 30 млрд. рублей активов находится в портфелях наших
+                      пользователей
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card trust-vert__card">
+                <div class="vert__img-wrapper trust__img-wrapper">
+                  <img
+                    src="img/svg/turst_cards/2.svg"
+                    alt=""
+                    class="card__img"
+                  />
+                </div>
+                <div class="vert__content trust__card-content">
+                  <div class="vert__header trust__header-wrapper">
+                    <h2 class="card__header-text trust__header-text">
+                      Команда профессионалов
+                    </h2>
+                  </div>
+                  <div class="vert__text trust__content-text">
+                    <div class="content__text">
+                      Каждый разработчик сервиса имеет брокерский счет и опыт на
+                      бирже
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card trust-vert__card">
+                <div class="vert__img-wrapper trust__img-wrapper">
+                  <img
+                    src="img/svg/turst_cards/3.svg"
+                    alt=""
+                    class="card__img"
+                  />
+                </div>
+                <div class="vert__content trust__card-content">
+                  <div class="vert__header trust__header-wrapper">
+                    <h2 class="card__header-text trust__header-text">
+                      Полная анонимность
+                    </h2>
+                  </div>
+                  <div class="vert__text trust__content-text">
+                    <div class="content__text">
+                      Мы не требуем никаких документов и не храним ваши
+                      персональные данные
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card trust-vert__card">
+                <div class="vert__img-wrapper trust__img-wrapper">
+                  <img
+                    src="img/svg/turst_cards/4.svg"
+                    alt=""
+                    class="card__img"
+                  />
+                </div>
+                <div class="vert__content trust__card-content">
+                  <div class="vert__header trust__header-wrapper">
+                    <h2 class="card__header-text trust__header-text">
+                      Оперативная поддержка
+                    </h2>
+                  </div>
+                  <div class="vert__text trust__content-text">
+                    <div class="content__text">
+                      Задайте вопрос, и мы гарантированно ответим вам в течение
+                      часа
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trust__text-wrapper">
+            <h2 class="trust__text">
+              Присоединяйтесь к более чем
+              <span class="text__yellow-uderline">22 000 инвесторов!</span>
+            </h2>
+          </div>
+          <div class="turst__button">
+            <button class="button__blue">Попробовать 30 дней бесплатно</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="founder">
+      <div class="container">
+        <div class="founder__wrapper">
+          <div class="founder__content">
+            <div class="founder__header">Основатель -<br />Максим Дьяконов</div>
+            <div class="founder__text content__text">
+              Успешно инвестирует уже более 7 лет и делится своим опытом с
+              подписчиками Telegram канала совершенно бесплатно.
+            </div>
+            <div class="founder__button">
+              <button class="button__subcribe">
+                <img
+                  src="img/svg/ui/telegram.svg"
+                  alt=""
+                  class="telegram__icon"
+                />
+                <div class="button__text">Подписаться на канал</div>
+              </button>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="founder__img-wrapper">
+              <img src="img/svg/founder_img.svg" alt="" class="founder__img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="main__logo">
+                <a href="" class="main__logo-link">
+                  <img
+                    src="img/svg/main_logo.svg"
+                    alt=""
+                    class="main__logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__cooperation">
+                <div class="cooperation__text">Сотрудничество:</div>
+                <a
+                  href="mailto:bmpartners@beatmarket.one"
+                  class="contact__link contact__link--bold"
+                  >bmpartners@beatmarket.one</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="footer__rights">
+                BeatMarket by
+                <a href="" class="inline__text-link">Montis Group</a>
+                2021.<br />
+                Все права защищены
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__rights">
+                Индивидуальный предприниматель Дьяконов Максим Сергеевич ИНН
+                503010875297 ОГРН 318774600266905 от 17 мая 2018 г Россия, г.
+                Москва, г. Московский, ул. Атласова д.3, пом.146, +79255427889
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <a href="" class="contact__link">Пользовательское соглашение</a>
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+            <div class="footer__item">
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

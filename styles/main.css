@@ -199,6 +199,7 @@ button {
 .select__radio:checked ~ .select__option {
   color: var(--blue);
   font-weight: 600;
+  height: 21px;
 }
 
 .trust__img-wrapper {
@@ -208,4 +209,12 @@ button {
 .excel__img {
   width: 100%;
   height: auto;
+}
+
+.select__option--disabled {
+  display: none;
+}
+
+.china-lang {
+  width: 53px;
 }

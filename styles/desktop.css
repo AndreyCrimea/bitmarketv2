@@ -501,7 +501,8 @@
   }
 
   .select__option-wrapper {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
+    height: 21px;
   }
 
   .select__option {
@@ -535,5 +536,16 @@
       transform: translate(45%, -55%) scale(0, 0%);
       opacity: 0;
     }
+  }
+
+  .select__with-img {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .select_option_img {
+    width: 20px;
+    border: 1px solid #e6eeff;
   }
 }

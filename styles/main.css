@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
 }
 
 :root {
@@ -20,6 +22,10 @@
     #ffffff 0%,
     #eaf1fe 100%
   );
+}
+
+.body {
+  position: relative;
 }
 
 body,
@@ -63,10 +69,10 @@ button {
 .button__blue {
   background-color: var(--blue);
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+
   color: var(--white);
-  padding: 29px 52px;
+
+  text-align: center;
   border: none;
   border-radius: 8px;
   box-shadow: 0px 21px 22px -13px rgba(62, 84, 216, 0.51);
@@ -77,15 +83,6 @@ button {
   background-color: var(--blue-dark);
 }
 
-.container {
-  --padding: 25px;
-
-  max-width: calc(1170px + calc(var(--padding) * 2));
-  margin: auto;
-
-  padding: 0 var(--padding);
-}
-
 .button__subcribe {
   background-color: var(--white);
   font-weight: 600;
@@ -94,10 +91,11 @@ button {
   color: var(--blue);
 
   display: flex;
+  justify-content: center;
   gap: 19px;
   align-items: center;
 
-  padding: 22px 28px;
+  padding: 22px 22px;
 
   border: none;
   border-radius: 8px;
@@ -112,14 +110,6 @@ button {
 .text__blue-bold {
   font-weight: 700;
   color: var(--blue);
-}
-
-.contact__link {
-  color: var(--blue);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  text-decoration: none;
 }
 
 .contact__link:hover {
@@ -148,6 +138,8 @@ button {
   position: relative;
   z-index: 1;
   line-height: 130%;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .text__yellow-uderline::before {
@@ -169,7 +161,6 @@ button {
 .starter__content-list {
   display: flex;
   flex-flow: column;
-  gap: 17px;
 }
 
 .starter__content-item {
@@ -217,4 +208,98 @@ button {
 
 .china-lang {
   width: 53px;
+}
+
+.header__adaptive {
+  display: flex;
+  justify-content: space-between;
+}
+
+.starter__img {
+  margin-top: -10.1%;
+  margin-left: -18.1%;
+  margin-bottom: -27.1%;
+  margin-right: -19.7%;
+}
+
+.easy__horis-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.excel__img-wrapper {
+  margin-bottom: -10.38%;
+  margin-right: -7.7%;
+  margin-left: -7.6%;
+  margin-top: -7.96%;
+}
+
+.vert__cards {
+  display: flex;
+}
+
+.vert__card {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.vert__img-wrapper {
+  background-color: var(--white);
+
+  box-shadow: 0px 44px 89px -17px rgba(62, 84, 216, 0.09);
+  border-radius: 36px;
+
+  position: relative;
+  padding: 50% 0;
+}
+
+.vert__content {
+  display: flex;
+  flex-flow: column;
+}
+
+.card__img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.toinvestor-vert__card {
+  gap: 40px;
+}
+
+.trust-vert__cards {
+  gap: 60px;
+}
+
+.toinvestor__header-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.toinvestor__content-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.horis__img-wrapper {
+  display: flex;
+  width: fit-content;
+}
+
+.founder__img {
+  margin-top: -4.8%;
+  margin-left: -18%;
+  margin-bottom: -20.1%;
+  margin-right: -32%;
+}
+
+.founder__img-wrapper {
+  width: fit-content;
 }

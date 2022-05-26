@@ -14,157 +14,201 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="main__logo">
-            <a href="" class="main__logo-link">
-              <img src="img/svg/main_logo.svg" alt="" class="main__logo-img" />
-            </a>
-          </div>
-          <div class="header__links">
-            <a href="" class="header__link">Советник</a>
-            <a href="" class="header__link text__yellow-uderline"
-              >Мой портфель</a
-            >
-            <a href="" class="header__link">Криптовалюта</a>
-            <a href="" class="header__link">Тарифы</a>
-            <a href="" class="header__link">Faq</a>
-          </div>
-          <div class="header__menus">
-            <div class="header__language">
-              <div class="select select_language">
-                <div class="select__placeholder">
-                  <div class="select__placeholder-text">Language</div>
-                  <div class="select__placeholder-ico-wrapper">
-                    <div class="select__placeholder-ico"></div>
-                  </div>
+          <div class="header__adaptive">
+            <div class="header__links-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <div class="ui_line ui__burger-line1"></div>
+                  <div class="ui_line ui__burger-line2"></div>
                 </div>
-
-                <div class="select__options">
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="ru" />
-                    <label for="ru" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/ru.svg"
-                        />Русский
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="en" />
-                    <label for="en" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/us.svg"
-                        />English
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="de" />
-                    <label for="de" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/de.svg"
-                        />Deutch
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="pl" />
-                    <label for="pl" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/pl.svg"
-                        />Polski
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="by" />
-                    <label for="by" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/by.svg"
-                        />Беларуская
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="fr" />
-                    <label for="fr" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/fr.svg"
-                        />Français
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="in" />
-                    <label for="in" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/in.svg"
-                        />भारतीय
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="cn" />
-                    <label for="cn" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/cn.svg"
-                        />
-                        <div class="china-lang">中国人</div>
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="th" />
-                    <label for="th" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/th.svg"
-                        />
-                        ไทย
-                      </div></label
-                    >
-                  </div>
-                  <div class="select__option-wrapper">
-                    <input class="select__radio" type="radio" id="jp" />
-                    <label for="jp" class="select__option"
-                      ><div class="select__with-img">
-                        <img
-                          class="select_option_img"
-                          src="https://flagicons.lipis.dev/flags/4x3/jp.svg"
-                        />
-                        <div class="china-lang">日本</div>
-                      </div></label
-                    >
-                  </div>
+              </div>
+              <!-- <img
+                src="img/svg/ui/menu_links.svg"
+                alt=""
+                class="header__menu-img"
+              /> -->
+            </div>
+            <div class="main__logo">
+              <a href="" class="main__logo-link">
+                <img
+                  src="img/svg/main_logo.svg"
+                  alt=""
+                  class="main__logo-img"
+                />
+              </a>
+            </div>
+            <div class="header__menu-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <img
+                    src="img/svg/ui/menu_lang_login.svg"
+                    alt=""
+                    class="header__menu-img"
+                  />
                 </div>
               </div>
             </div>
-            <div class="header__login">
-              <img src="img/svg/ui/user.svg" alt="" class="header__login-img" />
-              <div class="header__login-links">
-                <a href="" class="login__link">Вход</a>
-                <div class="header__login-separator">|</div>
-                <a href="" class="login__link">Регистрация</a>
+          </div>
+          <div class="header__links-wrapper hide__overflow_menus">
+            <div class="header__links">
+              <a href="" class="header__link">Советник</a>
+              <a href="" class="header__link text__yellow-uderline"
+                >Мой портфель</a
+              >
+              <a href="" class="header__link">Криптовалюта</a>
+              <a href="" class="header__link">Тарифы</a>
+              <a href="" class="header__link">Faq</a>
+            </div>
+          </div>
+          <div class="header__menu-wrapper hide__overflow_menus">
+            <div class="header__menus">
+              <div class="header__language">
+                <div class="select select_language">
+                  <div class="select__placeholder">
+                    <div class="select__placeholder-text">Language</div>
+                    <div class="select__placeholder-ico-wrapper">
+                      <div class="select__placeholder-ico"></div>
+                    </div>
+                  </div>
+                  <div class="select__options-wrapper">
+                    <div class="select__options">
+                      <div class="select__horisontal-line-wrapper">
+                        <div class="select__horisontal-line"></div>
+                      </div>
+                      <div class="hide__overflow_menus-scroll">
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="ru" />
+                          <label for="ru" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/ru.svg"
+                              />Русский
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="en" />
+                          <label for="en" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/us.svg"
+                              />English
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="de" />
+                          <label for="de" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/de.svg"
+                              />Deutch
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="pl" />
+                          <label for="pl" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/pl.svg"
+                              />Polski
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="by" />
+                          <label for="by" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/by.svg"
+                              />Беларуская
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="fr" />
+                          <label for="fr" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                              />Français
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="in" />
+                          <label for="in" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/in.svg"
+                              />भारतीय
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="cn" />
+                          <label for="cn" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/cn.svg"
+                              />
+                              <div class="china-lang">中国人</div>
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="th" />
+                          <label for="th" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/th.svg"
+                              />
+                              ไทย
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="jp" />
+                          <label for="jp" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/jp.svg"
+                              />
+                              <div class="china-lang">日本</div>
+                            </div></label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__login">
+                <img
+                  src="img/svg/ui/user.svg"
+                  alt=""
+                  class="header__login-img"
+                />
+                <div class="header__login-links">
+                  <a href="" class="login__link">Вход</a>
+                  <div class="header__login-separator">|</div>
+                  <a href="" class="login__link">Регистрация</a>
+                </div>
               </div>
             </div>
           </div>
@@ -196,8 +240,10 @@
               </button>
             </div>
           </div>
-          <div class="starter__content-img">
-            <img src="img/svg/starter_img.svg" alt="" class="starter__img" />
+          <div class="starter__content-img-wrapper">
+            <div class="starter__content-img">
+              <img src="img/svg/starter_img.svg" alt="" class="starter__img" />
+            </div>
           </div>
         </div>
       </div>
@@ -243,12 +289,16 @@
           <div class="toinvestor__cards">
             <div class="vert__cards toinvestor-vert__cards">
               <div class="vert__card toinvestor-vert__card">
-                <div class="vert__img-wrapper toinvestor__img-wrapper">
-                  <img
-                    src="img/svg/toinvestor_cards/1.svg"
-                    alt=""
-                    class="card__img"
-                  />
+                <div class="toinvestor_img-flex-wrapper">
+                  <div class="toinvestor_img-content-wrapper">
+                    <div class="vert__img-wrapper toinvestor__img-wrapper">
+                      <img
+                        src="img/svg/toinvestor_cards/1.svg"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="vert__content toinvestor__card-content">
                   <div class="vert__header">
@@ -266,12 +316,16 @@
                 </div>
               </div>
               <div class="vert__card toinvestor-vert__card">
-                <div class="vert__img-wrapper toinvestor__img-wrapper">
-                  <img
-                    src="img/svg/toinvestor_cards/2.svg"
-                    alt=""
-                    class="card__img"
-                  />
+                <div class="toinvestor_img-flex-wrapper">
+                  <div class="toinvestor_img-content-wrapper">
+                    <div class="vert__img-wrapper toinvestor__img-wrapper">
+                      <img
+                        src="img/svg/toinvestor_cards/2.svg"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="vert__content toinvestor__card-content">
                   <div class="vert__header">
@@ -289,12 +343,16 @@
                 </div>
               </div>
               <div class="vert__card toinvestor-vert__card">
-                <div class="vert__img-wrapper toinvestor__img-wrapper">
-                  <img
-                    src="img/svg/toinvestor_cards/3.svg"
-                    alt=""
-                    class="card__img"
-                  />
+                <div class="toinvestor_img-flex-wrapper">
+                  <div class="toinvestor_img-content-wrapper">
+                    <div class="vert__img-wrapper toinvestor__img-wrapper">
+                      <img
+                        src="img/svg/toinvestor_cards/3.svg"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="vert__content toinvestor__card-content">
                   <div class="vert__header">
@@ -348,7 +406,7 @@
                   <img
                     src="img/svg/easy_cards/1.svg"
                     alt=""
-                    class="horis__img"
+                    class="horis__img easy_horis_img"
                   />
                 </div>
               </div>
@@ -378,7 +436,7 @@
                   <img
                     src="img/svg/easy_cards/2.svg"
                     alt=""
-                    class="horis__img"
+                    class="horis__img easy_horis_img"
                   />
                 </div>
               </div>
@@ -408,7 +466,7 @@
                   <img
                     src="img/svg/easy_cards/3.svg"
                     alt=""
-                    class="horis__img"
+                    class="horis__img easy_horis_img"
                   />
                 </div>
               </div>
@@ -439,7 +497,7 @@
                   <img
                     src="img/svg/easy_cards/4.svg"
                     alt=""
-                    class="horis__img"
+                    class="horis__img easy_horis_img"
                   />
                 </div>
               </div>
@@ -468,7 +526,7 @@
                   <img
                     src="img/svg/easy_cards/5.svg"
                     alt=""
-                    class="horis__img"
+                    class="horis__img easy_horis_img"
                   />
                 </div>
               </div>
@@ -486,12 +544,16 @@
           <div class="turst__cards">
             <div class="vert__cards trust-vert__cards">
               <div class="vert__card trust-vert__card">
-                <div class="vert__img-wrapper trust__img-wrapper">
-                  <img
-                    src="img/svg/turst_cards/1.svg"
-                    alt=""
-                    class="card__img"
-                  />
+                <div class="trust-ver__flex-wrapper">
+                  <div class="turst-vert__wrapper">
+                    <div class="vert__img-wrapper trust__img-wrapper">
+                      <img
+                        src="img/svg/turst_cards/1.svg"
+                        alt=""
+                        class="card__img trust__card-img"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="vert__content trust__card-content">
                   <div class="vert__header trust__header-wrapper">
@@ -508,12 +570,16 @@
                 </div>
               </div>
               <div class="vert__card trust-vert__card">
-                <div class="vert__img-wrapper trust__img-wrapper">
-                  <img
-                    src="img/svg/turst_cards/2.svg"
-                    alt=""
-                    class="card__img"
-                  />
+                <div class="trust-ver__flex-wrapper">
+                  <div class="turst-vert__wrapper">
+                    <div class="vert__img-wrapper trust__img-wrapper">
+                      <img
+                        src="img/svg/turst_cards/2.svg"
+                        alt=""
+                        class="card__img trust__card-img"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="vert__content trust__card-content">
                   <div class="vert__header trust__header-wrapper">
@@ -530,12 +596,16 @@
                 </div>
               </div>
               <div class="vert__card trust-vert__card">
-                <div class="vert__img-wrapper trust__img-wrapper">
-                  <img
-                    src="img/svg/turst_cards/3.svg"
-                    alt=""
-                    class="card__img"
-                  />
+                <div class="trust-ver__flex-wrapper">
+                  <div class="turst-vert__wrapper">
+                    <div class="vert__img-wrapper trust__img-wrapper">
+                      <img
+                        src="img/svg/turst_cards/3.svg"
+                        alt=""
+                        class="card__img trust__card-img"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="vert__content trust__card-content">
                   <div class="vert__header trust__header-wrapper">
@@ -552,12 +622,16 @@
                 </div>
               </div>
               <div class="vert__card trust-vert__card">
-                <div class="vert__img-wrapper trust__img-wrapper">
-                  <img
-                    src="img/svg/turst_cards/4.svg"
-                    alt=""
-                    class="card__img"
-                  />
+                <div class="trust-ver__flex-wrapper">
+                  <div class="turst-vert__wrapper">
+                    <div class="vert__img-wrapper trust__img-wrapper">
+                      <img
+                        src="img/svg/turst_cards/4.svg"
+                        alt=""
+                        class="card__img trust__card-img"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="vert__content trust__card-content">
                   <div class="vert__header trust__header-wrapper">
@@ -670,6 +744,9 @@
         </div>
       </div>
     </footer>
-    <script src="select_menu.js"></script>
+    <script src="js/select_menu.js"></script>
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/open_close.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

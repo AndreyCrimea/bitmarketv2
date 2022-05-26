@@ -1,6 +1,15 @@
-@media screen and (min-width: 170px) {
+@media screen and (min-width: 950px) {
   body {
     overflow-x: hidden;
+  }
+
+  .container {
+    --padding: 25px;
+
+    max-width: calc(1170px + calc(var(--padding) * 2));
+    margin: auto;
+
+    padding: 0 var(--padding);
   }
 
   .footer__wrapper {
@@ -8,6 +17,11 @@
     flex-flow: column;
 
     gap: 16px;
+  }
+
+  .header__links-mobile,
+  .header__menu-mobile {
+    display: none;
   }
 
   .footer__line {
@@ -109,7 +123,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: max(min(17px, 1.3vw), 12px);
-    line-height: 21px;
+    line-height: 123.5%;
 
     transition: 300ms;
   }
@@ -144,15 +158,14 @@
     gap: 60px;
   }
 
-  .starter__content-img {
-    margin-top: -46px;
-    margin-left: -83px;
-    margin-right: -90px;
-    margin-bottom: -120px;
+  .starter__content-img-wrapper {
+    display: flex;
+    justify-content: end;
   }
 
   .starter__content-img {
-    padding-left: 83px;
+    display: flex;
+    justify-content: end;
   }
 
   .excel__wrapper {
@@ -173,16 +186,9 @@
   .excel__text {
     padding-top: 40px;
     max-width: 772px;
+    padding-bottom: 144px;
 
     display: flex;
-  }
-
-  .excel__img-wrapper {
-    padding-top: 144px;
-    margin-right: -6.6%;
-    margin-left: -6.6%;
-    margin-bottom: -12.08%;
-    margin-top: -9.06%;
   }
 
   .excel__text {
@@ -215,67 +221,6 @@
   .toinvestor__cards {
     padding-top: 60px;
     padding-bottom: 100px;
-  }
-
-  .vert__cards {
-    display: flex;
-  }
-
-  .vert__card {
-    width: 100%;
-  }
-
-  .toinvestor-vert__cards {
-    gap: 25px;
-  }
-
-  .vert__img-wrapper {
-    background-color: var(--white);
-
-    box-shadow: 0px 44px 89px -17px rgba(62, 84, 216, 0.09);
-    border-radius: 36px;
-
-    position: relative;
-    padding: 50% 0;
-  }
-
-  .toinvestor__card-content {
-    padding-top: 40px;
-  }
-
-  .vert__content {
-    display: flex;
-    flex-flow: column;
-    gap: 24px;
-  }
-
-  .card__img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .toinvestor-vert__card {
-    gap: 40px;
-  }
-
-  .trust-vert__cards {
-    gap: 60px;
-  }
-
-  .toinvestor__header-text {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .toinvestor__content-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
   }
 
   .easy {
@@ -325,17 +270,8 @@
     flex-basis: 0;
   }
 
-  .horis__img-wrapper {
-    /* 723×506 */
-
-    margin-bottom: -21.6%;
-    margin-top: -5.4%;
-    margin-right: -13.1%;
-    margin-left: -13.1%;
-  }
-
-  .horis__img {
-    width: 100%;
+  .easy_horis_img {
+    width: 126%;
     height: auto;
   }
 
@@ -396,22 +332,18 @@
   .founder__wrapper {
     display: flex;
     align-items: center;
-    gap: 83px;
     justify-content: start;
   }
 
-  .founder__img-wrapper {
-    margin-top: -27px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: -119px;
-
-    overflow: none;
-  }
-
-  .founder__content,
+  /* .founder__content,
   .footer__right {
     width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+  } */
+  .founder__content {
+    width: 50%;
   }
 
   .founder__header {
@@ -547,5 +479,59 @@
   .select_option_img {
     width: 20px;
     border: 1px solid #e6eeff;
+  }
+
+  .button__blue {
+    min-width: 421px;
+    padding: 29px 29px;
+  }
+
+  .starter__content-list {
+    gap: 17px;
+  }
+
+  .toinvestor-vert__cards {
+    gap: 25px;
+  }
+
+  .founder__img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button__subcribe {
+    min-width: 324px;
+  }
+
+  .easy_horis_img {
+    margin-left: -12.6%;
+    margin-right: -12.5%;
+    margin-top: -5.2%;
+    margin-bottom: -20.3%;
+  }
+
+  .toinvestor__card-content {
+    gap: 24px;
+  }
+
+  .trust__card-content {
+    gap: 24px;
+  }
+
+  .contact__link {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-decoration: none;
+  }
+
+  .button__blue {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header__links-wrapper {
+    width: 100%;
   }
 }

@@ -6,9 +6,12 @@ open_close_object = null;
 window.onload = () => {
   select_object = new Select_Class(".select");
   select_object.init_default_selct_value(".select_language", "#ru");
-  // select_object.set_event_on_select_option(".select_language", (elem) => {
-  //   // console.log(elem.querySelector(".select__radio").id);
-  // });
+  select_object.set_event_on_select_option(".select_language", (elem) => {
+    // console.log(elem.querySelector(".select__radio").id);
+    var header__menus = elem.closest(".header__menu-wrapper");
+    header__menus.removeAttribute("open");
+    header__menus.removeAttribute("active");
+  });
 
   open_close_object = new Open_Close();
 

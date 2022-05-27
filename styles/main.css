@@ -303,3 +303,17 @@ button {
 .founder__img-wrapper {
   width: fit-content;
 }
+
+.select__placeholder-ico {
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid var(--blue);
+  border-right: 2px solid var(--blue);
+
+  transform: rotate(45deg);
+  transition: 300ms;
+}
+
+.select[active] .select__placeholder-ico-wrapper {
+  transform: rotate(180deg);
+}

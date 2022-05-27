@@ -497,6 +497,8 @@
     z-index: 3;
     right: 0px;
     padding-right: 25px;
+    max-height: 145px;
+    transition: max-height 0.3s;
   }
 
   .header__menus {
@@ -507,17 +509,16 @@
     box-shadow: 0px 14px 22px -13px rgba(62, 84, 216, 0.22);
     border-radius: 8px;
 
-    flex-flow: column-reverse;
+    flex-flow: column;
 
     font-size: 18px;
     font-size: 18px;
     line-height: 100%;
 
-    height: 145px;
-
     justify-content: start;
+    align-items: flex-start;
 
-    transition: height 300ms;
+    overflow: hidden;
   }
 
   .header__login-img,
@@ -530,6 +531,7 @@
     flex-flow: column;
     gap: 24px;
     padding-bottom: 24px;
+    order: 0;
   }
 
   .login__link,
@@ -546,16 +548,6 @@
     user-select: none;
 
     cursor: pointer;
-  }
-
-  .select__placeholder-ico {
-    width: 8px;
-    height: 8px;
-    border-bottom: 2px solid var(--blue);
-    border-right: 2px solid var(--blue);
-
-    rotate: 45deg;
-    transition: 300ms;
   }
 
   .select__placeholder-ico-wrapper {
@@ -584,19 +576,14 @@
 
   .select[open] .select__options {
     display: block;
-    animation: slidedown 300ms forwards;
+    /* animation: slidedown 300ms forwards; */
   }
 
   .select[closing] .select__options {
     animation: slideup 300ms forwards;
   }
 
-  .select[active] .select__placeholder-ico-wrapper {
-    rotate: 180deg;
-  }
-
   .select__option-wrapper {
-    margin-bottom: 24px;
     height: 21px;
   }
 
@@ -634,8 +621,9 @@
     overflow: hidden;
   }
 
-  .header__menu-wrapper[open] .header__menus {
-    height: 415px;
+  .header__menu-wrapper[active] {
+    max-height: 440px;
+    overflow-y: hidden;
   }
 
   .select__horisontal-line-wrapper {
@@ -651,5 +639,15 @@
 
   .select__options {
     z-index: 10;
+  }
+
+  .header__language {
+    order: 2;
+  }
+
+  .select__flex-wrapper {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
   }
 }

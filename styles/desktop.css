@@ -377,9 +377,6 @@
     height: 8px;
     border-bottom: 2px solid var(--blue);
     border-right: 2px solid var(--blue);
-
-    rotate: 45deg;
-    transition: 300ms;
   }
 
   .select__placeholder-ico-wrapper {
@@ -426,10 +423,6 @@
 
   .select[closing] .select__options {
     animation: hideup 300ms forwards;
-  }
-
-  .select[active] .select__placeholder-ico-wrapper {
-    rotate: 180deg;
   }
 
   .select__option-wrapper {

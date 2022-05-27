@@ -37,6 +37,12 @@ window.onload = () => {
   );
 
   open_close_object.init_open_close_element(
+    ".header__menu-mobile",
+    ".header__menu-mobile",
+    false
+  );
+
+  open_close_object.init_open_close_element(
     ".select__placeholder",
     ".header__menu-wrapper",
     false

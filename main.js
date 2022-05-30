@@ -4,6 +4,7 @@ mobile_menu_object = null;
 open_close_object = null;
 
 window.onload = () => {
+  // HEADER initialize START -----------------
   select_object = new Select_Class(".select");
   select_object.init_default_selct_value(".select_language", "#ru");
   select_object.set_event_on_select_option(".select_language", (elem) => {
@@ -47,4 +48,5 @@ window.onload = () => {
     ".header__menu-wrapper",
     false
   );
+  // HEADER initialize END -----------------
 };

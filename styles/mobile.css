@@ -199,12 +199,6 @@
     width: 100%;
   }
 
-  .horis__img-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
   .horis__card {
     display: flex;
     flex-flow: column-reverse;
@@ -271,11 +265,11 @@
     width: 100%;
   }
 
-  .easy_horis_img {
-    margin-top: -4.3%;
-    margin-right: -10.3%;
-    margin-left: -10.3%;
-    margin-bottom: -16.3%;
+  .horis__img-wrapper {
+    margin-top: -5.8%;
+    margin-right: -13.2%;
+    margin-left: -13.2%;
+    margin-bottom: -21.5%;
   }
 
   .trust__wrapper {
@@ -439,10 +433,10 @@
   }
 
   .header__links-wrapper {
-    height: 100vh;
     width: 100%;
     left: 0;
     z-index: 1;
+    padding-bottom: 30px;
   }
 
   .header__links {
@@ -494,11 +488,12 @@
   }
 
   .header__menu-wrapper {
+    padding: 10px 25px 25px 25px;
     z-index: 3;
     right: 0px;
-    padding-right: 25px;
-    max-height: 145px;
-    transition: max-height 0.3s;
+
+    height: 180px;
+    transition: height 0.3s;
   }
 
   .header__menus {
@@ -622,7 +617,7 @@
   }
 
   .header__menu-wrapper[active] {
-    max-height: 440px;
+    height: 470px;
     overflow-y: hidden;
   }
 
@@ -710,5 +705,343 @@
     bottom: 11px;
     width: 26px;
     transform: rotate(135deg);
+  }
+
+  .investmesnt__header-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .investments__wrapper {
+    padding-top: 49px;
+  }
+
+  .investments__content {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .investments__text {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 77px;
+  }
+
+  .investments__text {
+    order: 1;
+  }
+
+  .investments__content-img-wrapper {
+    order: 2;
+  }
+
+  .investments__content-telegram-link-wrapper {
+    padding-top: 15px;
+    order: 3;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .investments__content-telegram-link {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: var(--blue);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .investments__content-telegram-link:hover {
+    text-decoration: underline;
+  }
+
+  .investments__button {
+    padding-top: 36px;
+    order: 4;
+  }
+
+  .investments__text-info {
+    padding-top: 24px;
+    order: 5;
+  }
+
+  .forwho__wrapper {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .forwho__cards {
+    padding-top: 58px;
+    display: flex;
+    flex-flow: column;
+    gap: 70px;
+  }
+
+  .forwho__card-content {
+    padding-top: 0px;
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+  }
+
+  .forwho__img-wrapper {
+    max-width: 400px;
+  }
+
+  .forwho__img-wrapper {
+    margin-bottom: -7.2%;
+  }
+
+  .forwho__info {
+    padding-top: 60px;
+  }
+
+  .forwho__info-wrapper {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .howwork__wrapper {
+    padding-top: 80px;
+  }
+
+  .investments__content-img-wrapper {
+    /* margin-top: -10.3%;
+    margin-right: -10.3%;
+    margin-left: -10.5%;
+    margin-bottom: -10.4%; */
+
+    margin-top: -8.5%;
+    margin-bottom: -8.6%;
+  }
+
+  .forwho__img-wrapper {
+    /* margin-right: -9.3%;
+    margin-bottom: -15.9%;
+    margin-left: -9.9%;
+    margin-top: -3.7%; */
+
+    margin-top: -2.7%;
+    margin-bottom: -12.2%;
+  }
+
+  .howwork__img-wrapper {
+    /* margin-top: -11.6%;
+    margin-right: -29.9%;
+    margin-left: -29.9%;
+    margin-bottom: -49%; */
+
+    margin-top: -6.9%;
+    margin-bottom: -31.4%;
+  }
+
+  .howwork_img-flex-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .howwork_img-content-wrapper {
+    max-width: 300px;
+  }
+
+  .howwork__content-text {
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .forwho-vert__card {
+    gap: 50px;
+  }
+
+  .howwork-vert__card {
+    gap: 50px;
+  }
+
+  .howwork__cards {
+    gap: 60px;
+  }
+
+  .whywe__header {
+    padding-top: 80px;
+  }
+
+  .whywe__card {
+    flex-flow: column !important;
+  }
+
+  .whywe__cards {
+    padding-top: 90px;
+  }
+
+  .whywe-horis__text {
+    padding-top: 53px;
+  }
+
+  .howwork__cards {
+    padding-top: 60px;
+  }
+
+  .whywe__button {
+    padding-top: 60px;
+    padding-bottom: 8px;
+  }
+
+  .whywe-horis__img-wrapper {
+    /* margin-top: -16.6%;
+    margin-left: -24%;
+    margin-right: -12.9%;
+    margin-bottom: -21.1%; */
+
+    margin-top: -12.1%;
+    margin-bottom: -15.7%;
+  }
+
+  .whywe-card__item {
+    gap: 12px;
+  }
+
+  .whywe-card__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .faq__header-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 125%;
+  }
+
+  .faq__header-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .faq__header-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 125%;
+  }
+
+  .faq__header-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .faq__header {
+    padding-top: 48px;
+  }
+
+  .faq__header-text {
+    padding-top: 30px;
+  }
+
+  .faq__content {
+    padding-top: 50px;
+
+    background-image: url("../img/faq/mobile_imges.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 80px;
+  }
+
+  .faq__questions-wrapper {
+    background-color: var(--white);
+    border-radius: 20px;
+    max-width: 971px;
+    padding: 25px 16px 50px 16px;
+    width: 100%;
+    margin: 0 25px;
+  }
+
+  .question__info {
+    padding-top: 48px;
+  }
+
+  .question__info-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .question__info-text {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .question__checkbox:checked ~ .quetion__answer-wrapper {
+    max-height: 1000px;
+  }
+
+  .tarif__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .tarif__cards {
+    padding-top: 50px;
+  }
+
+  .tarif__card-content-text {
+    padding-top: 32px;
+  }
+
+  .tarif__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 24px;
+  }
+
+  .tarif__button {
+    padding: 29px 10px;
+    background-color: var(--blue);
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--white);
+    width: 100%;
+    border: none;
+    box-shadow: 0px 21px 22px -13px rgba(62, 84, 216, 0.51);
+  }
+
+  .tarifs__header-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 125%;
+    padding-top: 48px;
+  }
+
+  .tarifs__header-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 30px;
+    text-align: center;
   }
 }

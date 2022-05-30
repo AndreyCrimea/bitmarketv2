@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__adaptive">
+            <div class="header__links-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <div class="ui_line ui__burger-line1"></div>
+                  <div class="ui_line ui__burger-line2"></div>
+                </div>
+              </div>
+
+              <!-- <img
+                src="img/svg/ui/menu_links.svg"
+                alt=""
+                class="header__menu-img"
+              /> -->
+            </div>
+            <div class="main__logo">
+              <a href="" class="main__logo-link">
+                <img
+                  src="img/svg/main_logo.svg"
+                  alt=""
+                  class="main__logo-img"
+                />
+              </a>
+            </div>
+            <div class="header__menu-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <div class="ui_circle ui_circle-main">
+                    <div class="ui_circle ui_circle-1"></div>
+                    <div class="ui_circle ui_circle-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__links-wrapper hide__overflow_menus">
+            <div class="header__links">
+              <a href="adviser.html" class="header__link text__yellow-uderline"
+                >Советник</a
+              >
+              <a href="index.html" class="header__link">Мой портфель</a>
+              <a href="crypto.html" class="header__link">Криптовалюта</a>
+              <a href="tarifs.html" class="header__link">Тарифы</a>
+              <a href="faq.html" class="header__link">Faq</a>
+            </div>
+          </div>
+          <div class="header__menu-wrapper hide__overflow_menus">
+            <div class="header__menus">
+              <div class="header__language">
+                <div class="select select_language">
+                  <div class="select__placeholder">
+                    <div class="select__placeholder-text">Language</div>
+                    <div class="select__placeholder-ico-wrapper">
+                      <div class="select__placeholder-ico"></div>
+                    </div>
+                  </div>
+                  <div class="select__options-wrapper">
+                    <div class="select__options">
+                      <div class="select__horisontal-line-wrapper">
+                        <div class="select__horisontal-line"></div>
+                      </div>
+                      <div
+                        class="hide__overflow_menus-scroll select__flex-wrapper"
+                      >
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="ru" />
+                          <label for="ru" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/ru.svg"
+                              />Русский
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="en" />
+                          <label for="en" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/us.svg"
+                              />English
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="de" />
+                          <label for="de" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/de.svg"
+                              />Deutch
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="pl" />
+                          <label for="pl" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/pl.svg"
+                              />Polski
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="by" />
+                          <label for="by" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/by.svg"
+                              />Беларуская
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="fr" />
+                          <label for="fr" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                              />Français
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="in" />
+                          <label for="in" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/in.svg"
+                              />भारतीय
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="cn" />
+                          <label for="cn" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/cn.svg"
+                              />
+                              <div class="china-lang">中国人</div>
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="th" />
+                          <label for="th" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/th.svg"
+                              />
+                              ไทย
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="jp" />
+                          <label for="jp" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/jp.svg"
+                              />
+                              <div class="china-lang">日本</div>
+                            </div></label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__login">
+                <img
+                  src="img/svg/ui/user.svg"
+                  alt=""
+                  class="header__login-img"
+                />
+                <div class="header__login-links">
+                  <a href="" class="login__link">Вход</a>
+                  <div class="header__login-separator">|</div>
+                  <a href="" class="login__link">Регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="investments">
+      <div class="container">
+        <div class="investments__wrapper">
+          <div class="investments__header">
+            <h1 class="investmesnt__header-text">
+              Инвестиции в акции. Доступно и удобно
+            </h1>
+          </div>
+          <div class="investments__content">
+            <div class="investments__text">
+              Еще никогда опередить рынок не было так просто.<br />Эта система
+              перевернет ваше представление об инвестировании.
+            </div>
+            <div class="investments__button">
+              <button class="button__blue">
+                Попробовать 30 дней бесплатно
+              </button>
+            </div>
+            <div class="investments__text-info">
+              Для инвесторов, вкладывающих в акции иностранных компаний<br />
+              Санкт-Петербургской фондовой биржи, NYSE, NASDAQ.
+            </div>
+            <div class="investments__content-img-wrapper">
+              <img
+                src="img/svg/investments.svg"
+                alt=""
+                class="investments__img"
+              />
+            </div>
+
+            <div class="investments__content-telegram-link-wrapper">
+              <a href="" class="investments__content-telegram-link">
+                <span class="investments__content-telegram-text"
+                  >Результаты онлайн в Telegram
+                </span>
+                <img
+                  src="img/svg/ui/arrow_link.svg"
+                  alt=""
+                  class="investments__content-telegram-ico"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="forwho">
+      <div class="container">
+        <div class="forwho__wrapper">
+          <div class="forwho__header">
+            <div class="header__text-def">Для кого эта платформа</div>
+          </div>
+          <div class="forwho__cards vert__cards">
+            <div class="vert__card forwho-vert__card">
+              <div class="forwho_img-flex-wrapper">
+                <div class="forwho__img-wrapper">
+                  <img
+                    src="img/svg/forwho_cards/1.svg"
+                    alt=""
+                    class="forwho-card__img"
+                  />
+                </div>
+              </div>
+              <div class="vert__content forwho__card-content">
+                <div class="vert__header">
+                  <h2 class="card__header-text forwho__header-text">
+                    Профессионалы
+                  </h2>
+                </div>
+                <div class="vert__text">
+                  <div class="content__text forwho__content-text">
+                    Оцените предложенные акции и понаблюдайте за результатами.
+                    Заведите Свой портфель в платформе и сравните доходность
+                    онлайн. Не отказывайте себе в возможности диверсифицировать
+                    вашу стратегию,
+                    <span class="text__bold"
+                      >снизив риск и увеличив шансы на повышенную
+                      доходность.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vert__card forwho-vert__card">
+              <div class="forwho_img-flex-wrapper">
+                <div class="forwho__img-wrapper">
+                  <img
+                    src="img/svg/forwho_cards/2.svg"
+                    alt=""
+                    class="forwho-card__img"
+                  />
+                </div>
+              </div>
+              <div class="vert__content forwho__card-content">
+                <div class="vert__header">
+                  <h2 class="card__header-text forwho__header-text">
+                    Начинающие
+                  </h2>
+                </div>
+                <div class="vert__text">
+                  <div class="content__text forwho__content-text">
+                    Для тех, кто хочет без чрезвычайных рисков
+                    <span class="text__bold">приумножить своё состояние</span>.
+                    Советник поможет — куда лучше инвестировать именно Вам и
+                    когда продавать. Поступайте как разумный инвестор.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forwho__info">
+            <div class="forwho__info-wrapper">
+              <img
+                src="img/svg/ui/dollar-circle.svg"
+                alt=""
+                class="forwho__info-img"
+              />
+              <div class="forwho__info-text">
+                Все компании доступны на
+                <span class="text__bold"
+                  >Санкт-Петербургской фондовой бирже, NYSE, NASDAQ</span
+                >, у любого известного брокера – Тинькофф, БКС, Сбербанк и тд.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="howwork-whywe">
+      <div class="howwork">
+        <div class="container">
+          <div class="howwork__wrapper">
+            <div class="howwork__header">
+              <div class="header__text-def">Как это работает</div>
+            </div>
+            <div class="howwork__cards vert__cards">
+              <div class="vert__card howwork-vert__card">
+                <div class="howwork_img-flex-wrapper">
+                  <div class="howwork_img-content-wrapper">
+                    <div class="howwork__img-wrapper">
+                      <img
+                        src="img/svg/howwork_cards/1.svg"
+                        alt=""
+                        class="forwho-card__img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="vert__content howwork__card-content">
+                  <div class="vert__text">
+                    <div class="content__text howwork__content-text">
+                      Регистрируетесь<br />на платформе
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card howwork-vert__card">
+                <div class="howwork_img-flex-wrapper">
+                  <div class="howwork_img-content-wrapper">
+                    <div class="howwork__img-wrapper">
+                      <img
+                        src="img/svg/howwork_cards/2.svg"
+                        alt=""
+                        class="forwho-card__img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="vert__content howwork__card-content">
+                  <div class="vert__text">
+                    <div class="content__text howwork__content-text">
+                      Генерируете<br />свой портфель
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card howwork-vert__card">
+                <div class="howwork_img-flex-wrapper">
+                  <div class="howwork_img-content-wrapper">
+                    <div class="howwork__img-wrapper">
+                      <img
+                        src="img/svg/howwork_cards/3.svg"
+                        alt=""
+                        class="forwho-card__img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="vert__content howwork__card-content">
+                  <div class="vert__text">
+                    <div class="content__text howwork__content-text">
+                      Следуете<br />рекомендациям
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vert__card howwork-vert__card">
+                <div class="howwork_img-flex-wrapper">
+                  <div class="howwork_img-content-wrapper">
+                    <div class="howwork__img-wrapper">
+                      <img
+                        src="img/svg/howwork_cards/4.svg"
+                        alt=""
+                        class="forwho-card__img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="vert__content howwork__card-content">
+                  <div class="vert__text">
+                    <div class="content__text howwork__content-text">
+                      Получайте доходность<br />выше рынка
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="whywe">
+        <div class="container">
+          <div class="whywe__wrapper">
+            <div class="whywe__header">
+              <div class="header__text-def">
+                Почему выбирают<br />BeatMarket
+              </div>
+            </div>
+            <div class="whywe__content">
+              <div class="whywe__cards horisontal__cards">
+                <div class="horis__card whywe__card">
+                  <div class="horis__content-img-wrapper">
+                    <div class="whywe-horis__img-wrapper">
+                      <img
+                        src="img/svg/whywe_card/1.svg"
+                        alt=""
+                        class="horis__img easy_horis_img"
+                      />
+                    </div>
+                  </div>
+                  <div class="horis__content">
+                    <div class="whywe-horis__text">
+                      <div class="content__text">
+                        <div class="whywe-card__content-list">
+                          <div class="whywe-card__item">
+                            <img
+                              src="img/svg/whywe_card1/1.svg"
+                              alt=""
+                              class="whywe-card__item-img"
+                            />
+                            <div class="whywe-card__item-text">
+                              Доходнее, чем большинство индексных фондов
+                            </div>
+                          </div>
+                          <div class="whywe-card__item">
+                            <img
+                              src="img/svg/whywe_card1/2.svg"
+                              alt=""
+                              class="whywe-card__item-img"
+                            />
+                            <div class="whywe-card__item-text">
+                              Просто следовать, удобно контролировать. Не
+                              требует постоянного внимания
+                            </div>
+                          </div>
+                          <div class="whywe-card__item">
+                            <img
+                              src="img/svg/whywe_card1/3.svg"
+                              alt=""
+                              class="whywe-card__item-img"
+                            />
+                            <div class="whywe-card__item-text">
+                              Дешевле, чем платить консультантам и персональным
+                              менеджерам
+                            </div>
+                          </div>
+                          <div class="whywe-card__item">
+                            <img
+                              src="img/svg/whywe_card1/4.svg"
+                              alt=""
+                              class="whywe-card__item-img"
+                            />
+                            <div class="whywe-card__item-text">
+                              Убережет от главных ошибок – страха, жадности,
+                              трейдинга.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="whywe__button">
+                <button class="button__blue">
+                  Попробовать 30 дней бесплатно
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="founder">
+      <div class="container">
+        <div class="founder__wrapper">
+          <div class="founder__content">
+            <div class="founder__header">Основатель -<br />Максим Дьяконов</div>
+            <div class="founder__text content__text">
+              Успешно инвестирует уже более 7 лет и делится своим опытом с
+              подписчиками Telegram канала совершенно бесплатно.
+            </div>
+            <div class="founder__button">
+              <button class="button__subcribe">
+                <img
+                  src="img/svg/ui/telegram.svg"
+                  alt=""
+                  class="telegram__icon"
+                />
+                <div class="button__text">Подписаться на канал</div>
+              </button>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="founder__img-wrapper">
+              <img src="img/svg/founder_img.svg" alt="" class="founder__img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="main__logo">
+                <a href="" class="main__logo-link">
+                  <img
+                    src="img/svg/main_logo.svg"
+                    alt=""
+                    class="main__logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__cooperation">
+                <div class="cooperation__text">Сотрудничество:</div>
+                <a
+                  href="mailto:bmpartners@beatmarket.one"
+                  class="contact__link contact__link--bold"
+                  >bmpartners@beatmarket.one</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="footer__rights">
+                BeatMarket by
+                <a href="" class="inline__text-link">Montis Group</a>
+                2021.<br />
+                Все права защищены
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__rights">
+                Индивидуальный предприниматель Дьяконов Максим Сергеевич ИНН
+                503010875297 ОГРН 318774600266905 от 17 мая 2018 г Россия, г.
+                Москва, г. Московский, ул. Атласова д.3, пом.146, +79255427889
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <a href="" class="contact__link">Пользовательское соглашение</a>
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+            <div class="footer__item">
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/select_menu.js"></script>
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/open_close.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

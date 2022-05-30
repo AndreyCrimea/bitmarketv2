@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__adaptive">
+            <div class="header__links-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <div class="ui_line ui__burger-line1"></div>
+                  <div class="ui_line ui__burger-line2"></div>
+                </div>
+              </div>
+
+              <!-- <img
+                src="img/svg/ui/menu_links.svg"
+                alt=""
+                class="header__menu-img"
+              /> -->
+            </div>
+            <div class="main__logo">
+              <a href="" class="main__logo-link">
+                <img
+                  src="img/svg/main_logo.svg"
+                  alt=""
+                  class="main__logo-img"
+                />
+              </a>
+            </div>
+            <div class="header__menu-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <div class="ui_circle ui_circle-main">
+                    <div class="ui_circle ui_circle-1"></div>
+                    <div class="ui_circle ui_circle-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__links-wrapper hide__overflow_menus">
+            <div class="header__links">
+              <a href="adviser.html" class="header__link">Советник</a>
+              <a href="index.html" class="header__link">Мой портфель</a>
+              <a href="crypto.html" class="header__link">Криптовалюта</a>
+              <a href="tarifs.html" class="header__link text__yellow-uderline"
+                >Тарифы</a
+              >
+              <a href="faq.html" class="header__link">Faq</a>
+            </div>
+          </div>
+          <div class="header__menu-wrapper hide__overflow_menus">
+            <div class="header__menus">
+              <div class="header__language">
+                <div class="select select_language">
+                  <div class="select__placeholder">
+                    <div class="select__placeholder-text">Language</div>
+                    <div class="select__placeholder-ico-wrapper">
+                      <div class="select__placeholder-ico"></div>
+                    </div>
+                  </div>
+                  <div class="select__options-wrapper">
+                    <div class="select__options">
+                      <div class="select__horisontal-line-wrapper">
+                        <div class="select__horisontal-line"></div>
+                      </div>
+                      <div
+                        class="hide__overflow_menus-scroll select__flex-wrapper"
+                      >
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="ru" />
+                          <label for="ru" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/ru.svg"
+                              />Русский
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="en" />
+                          <label for="en" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/us.svg"
+                              />English
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="de" />
+                          <label for="de" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/de.svg"
+                              />Deutch
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="pl" />
+                          <label for="pl" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/pl.svg"
+                              />Polski
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="by" />
+                          <label for="by" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/by.svg"
+                              />Беларуская
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="fr" />
+                          <label for="fr" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                              />Français
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="in" />
+                          <label for="in" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/in.svg"
+                              />भारतीय
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="cn" />
+                          <label for="cn" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/cn.svg"
+                              />
+                              <div class="china-lang">中国人</div>
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="th" />
+                          <label for="th" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/th.svg"
+                              />
+                              ไทย
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="jp" />
+                          <label for="jp" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/jp.svg"
+                              />
+                              <div class="china-lang">日本</div>
+                            </div></label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__login">
+                <img
+                  src="img/svg/ui/user.svg"
+                  alt=""
+                  class="header__login-img"
+                />
+                <div class="header__login-links">
+                  <a href="" class="login__link">Вход</a>
+                  <div class="header__login-separator">|</div>
+                  <a href="" class="login__link">Регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="tarifs">
+      <div class="container">
+        <div class="tarifs__wrapper">
+          <div class="tarifs__header">
+            <div class="tarifs__header-title">Тарифы</div>
+            <div class="tarifs__header-text">
+              Для вашего удобства мы подготовили 4 тарифа, каждый найдет для
+              себя именно то, <span class="text__bold">что ему подходит</span>
+            </div>
+          </div>
+          <div class="tarif__cards">
+            <div class="tarif__card-to-hover">
+              <div class="tarif__card">
+                <div class="tarif__cirсle">
+                  <div class="tarif__circle-circle tarif__circle--blue"></div>
+                </div>
+                <div class="tarif__card-wrapper">
+                  <div class="tarif__card-content">
+                    <div class="tarif__card-header">Тестовый</div>
+                    <div class="tarif__card-content-price">
+                      <span class="tarif__price">Бесплатно</span>
+                      <span class="tarif__duration">В течении 30 дней</span>
+                    </div>
+                    <div class="tarif__card-content-text">
+                      Весь функционал платформы без ограничений, в течении 30
+                      дней. Никаких привязок карты и данных. Пробуйте,
+                      оценивайте, пользуйтесь.
+                    </div>
+                  </div>
+                  <div class="tarif__card-button">
+                    <button class="tarif__button">Выбрать тариф</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tarif__card-to-hover">
+              <div class="tarif__card tarif__card2">
+                <div class="tarif__cirсle">
+                  <div class="tarif__circle-circle tarif__circle--green"></div>
+                </div>
+                <div class="tarif__card-wrapper">
+                  <div class="tarif__card-content">
+                    <div class="tarif__card-header">Свой портфель</div>
+                    <div class="tarif__card-content-price">
+                      <span class="tarif__price">290 руб.</span>
+                      <span class="tarif__duration">/ месяц</span>
+                    </div>
+                    <div class="tarif__card-content-text">
+                      Заведите свой собственный портфель из акций и ETF, следите
+                      за своими инвестициями в режиме онлайн, анализируйте
+                      данные и сравнивайте результаты с Бенчмарком. Просто,
+                      наглядно, удобно.
+                    </div>
+                  </div>
+                  <div class="tarif__card-button">
+                    <button class="tarif__button">Выбрать тариф</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tarif__card-to-hover">
+              <div class="tarif__card">
+                <div class="tarif__cirсle">
+                  <div class="tarif__circle-circle tarif__circle--red"></div>
+                </div>
+                <div class="tarif__card-wrapper">
+                  <div class="tarif__card-content">
+                    <div class="tarif__card-header">Советник</div>
+                    <div class="tarif__card-content-price">
+                      <span class="tarif__price">690 руб.</span>
+                      <span class="tarif__duration">/ месяц</span>
+                    </div>
+                    <div class="tarif__card-content-text">
+                      Управляйте портфелем на автопилоте. Платформа поможет с
+                      выбором, проследит за купленными акциями, покажет, на что
+                      обратить внимание.
+                    </div>
+                  </div>
+                  <div class="tarif__card-button">
+                    <button class="tarif__button">Выбрать тариф</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tarif__card-to-hover">
+              <div class="tarif__card">
+                <div class="tarif__cirсle">
+                  <div class="tarif__circle-circle tarif__circle--yellow"></div>
+                </div>
+                <div class="tarif__card-wrapper">
+                  <div class="tarif__card-content">
+                    <div class="tarif__card-header">Все включено</div>
+                    <div class="tarif__card-content-price">
+                      <span class="tarif__price">890 руб.</span>
+                      <span class="tarif__duration">/ месяц</span>
+                    </div>
+                    <div class="tarif__card-content-text">
+                      Все функции платформы по выгодной цене. Легко и удобно.
+                      Никаких ограничений.
+                    </div>
+                  </div>
+                  <div class="tarif__card-button">
+                    <button class="tarif__button">Выбрать тариф</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="main__logo">
+                <a href="" class="main__logo-link">
+                  <img
+                    src="img/svg/main_logo.svg"
+                    alt=""
+                    class="main__logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__cooperation">
+                <div class="cooperation__text">Сотрудничество:</div>
+                <a
+                  href="mailto:bmpartners@beatmarket.one"
+                  class="contact__link contact__link--bold"
+                  >bmpartners@beatmarket.one</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="footer__rights">
+                BeatMarket by
+                <a href="" class="inline__text-link">Montis Group</a>
+                2021.<br />
+                Все права защищены
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__rights">
+                Индивидуальный предприниматель Дьяконов Максим Сергеевич ИНН
+                503010875297 ОГРН 318774600266905 от 17 мая 2018 г Россия, г.
+                Москва, г. Московский, ул. Атласова д.3, пом.146, +79255427889
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <a href="" class="contact__link">Пользовательское соглашение</a>
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+            <div class="footer__item">
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/select_menu.js"></script>
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/open_close.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

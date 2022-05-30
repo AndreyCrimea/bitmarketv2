@@ -288,11 +288,6 @@ button {
   line-height: 150%;
 }
 
-.horis__img-wrapper {
-  display: flex;
-  width: fit-content;
-}
-
 .founder__img {
   margin-top: -4.8%;
   margin-left: -18%;
@@ -316,4 +311,257 @@ button {
 
 .select[active] .select__placeholder-ico-wrapper {
   transform: rotate(180deg);
+}
+
+.investments {
+  background-color: var(--light-blue-bg);
+}
+
+.forwho {
+  background-color: var(--light-blue-bg);
+}
+
+.howwork-whywe {
+  background: var(--light-blue-gradient-tobottom);
+}
+
+.investments__content {
+  text-align: center;
+}
+
+.investments__img {
+  width: 100%;
+  height: auto;
+}
+
+.forwho-card__img {
+  width: 100%;
+  height: auto;
+}
+
+.forwho_img-flex-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.vert__header {
+  text-align: center;
+}
+
+.forwho__info-wrapper {
+  background-color: var(--white);
+  display: flex;
+  gap: 24px;
+  box-shadow: 0px 18px 16px -13px rgba(62, 84, 216, 0.1);
+  border-radius: 10px;
+  border: 1px solid #e6eeff;
+
+  align-items: center;
+  padding: 24px;
+}
+
+.forwho-card__img {
+  width: 100%;
+  height: auto;
+}
+
+.whywe-card__content-list {
+  display: flex;
+  flex-flow: column;
+  gap: 38px;
+}
+
+.whywe-card__item {
+  display: flex;
+}
+
+.easy_horis_img {
+  width: 100% !important;
+  height: auto;
+}
+
+.faq__header {
+  text-align: center;
+}
+
+.faq {
+  background-color: var(--light-blue-bg);
+}
+
+.qbox {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+
+  background-color: #8c9bea;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 2px;
+}
+
+.qoverflow {
+  position: relative;
+  height: 9px;
+  width: 17px;
+
+  overflow: hidden;
+
+  rotate: -180deg;
+  transition: 0.3s;
+}
+
+.question__label-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.question__checkbox {
+  display: none;
+}
+
+.question__label {
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  display: block;
+}
+
+.quetion__answer-wrapper {
+  overflow: hidden;
+  max-height: 0px;
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+
+.question__checkbox:checked ~ .quetion__answer-wrapper {
+  padding-bottom: 32px;
+}
+
+.question__label {
+  padding: 32px 0px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.question__underline {
+  border-bottom: 1px solid #d3e3ff;
+}
+
+.question__checkbox:checked ~ .question__label .qoverflow {
+  rotate: 0deg;
+}
+
+.question__checkbox:checked ~ .question__label .qbox {
+  background-color: var(--blue);
+}
+
+.question__label-text {
+  transition: 0.3s;
+}
+
+.question__label:hover > .question__label-text {
+  color: var(--blue);
+}
+
+.tarifs {
+  background-color: var(--light-blue-bg);
+}
+
+.tarifs__header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.tarif__card {
+  background-color: var(--white);
+  border-radius: 15px;
+  border: 1px solid #d3e3ff;
+  padding: 24px 24px 32px 24px;
+}
+
+.tarif__card-content-price {
+  padding-top: 24px;
+}
+
+.tarif__card-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.tarif__price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--blue);
+}
+
+.tarif__duration {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #929398;
+}
+
+.tarif__card {
+  width: 100%;
+}
+
+.tarif__card-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.tarif__card-button {
+  padding-top: 14px;
+}
+
+.tarif__card-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.tarif__circle--yellow {
+  background: #f3b63f;
+}
+
+.tarif__circle--red {
+  background: #ed6373;
+}
+
+.tarif__circle--green {
+  background: #199f27;
+}
+
+.tarif__circle--blue {
+  background: #3e54d8;
+}
+
+.tarif__circle-circle {
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+
+  position: absolute;
+  right: -74px;
+  top: -74px;
+
+  transition: 0.3s;
+}
+
+.tarif__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.tarif__card-to-hover {
+  height: 100%;
 }

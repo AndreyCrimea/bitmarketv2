@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__adaptive">
+            <div class="header__links-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <div class="ui_line ui__burger-line1"></div>
+                  <div class="ui_line ui__burger-line2"></div>
+                </div>
+              </div>
+
+              <!-- <img
+                src="img/svg/ui/menu_links.svg"
+                alt=""
+                class="header__menu-img"
+              /> -->
+            </div>
+            <div class="main__logo">
+              <a href="" class="main__logo-link">
+                <img
+                  src="img/svg/main_logo.svg"
+                  alt=""
+                  class="main__logo-img"
+                />
+              </a>
+            </div>
+            <div class="header__menu-mobile">
+              <div class="ui__burger-wrapper">
+                <div class="ui__burger-background">
+                  <div class="ui_circle ui_circle-main">
+                    <div class="ui_circle ui_circle-1"></div>
+                    <div class="ui_circle ui_circle-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__links-wrapper hide__overflow_menus">
+            <div class="header__links">
+              <a href="adviser.html" class="header__link">Советник</a>
+              <a href="index.html" class="header__link">Мой портфель</a>
+              <a href="crypto.html" class="header__link">Криптовалюта</a>
+              <a href="tarifs.html" class="header__link">Тарифы</a>
+              <a href="faq.html" class="header__link text__yellow-uderline"
+                >Faq</a
+              >
+            </div>
+          </div>
+          <div class="header__menu-wrapper hide__overflow_menus">
+            <div class="header__menus">
+              <div class="header__language">
+                <div class="select select_language">
+                  <div class="select__placeholder">
+                    <div class="select__placeholder-text">Language</div>
+                    <div class="select__placeholder-ico-wrapper">
+                      <div class="select__placeholder-ico"></div>
+                    </div>
+                  </div>
+                  <div class="select__options-wrapper">
+                    <div class="select__options">
+                      <div class="select__horisontal-line-wrapper">
+                        <div class="select__horisontal-line"></div>
+                      </div>
+                      <div
+                        class="hide__overflow_menus-scroll select__flex-wrapper"
+                      >
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="ru" />
+                          <label for="ru" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/ru.svg"
+                              />Русский
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="en" />
+                          <label for="en" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/us.svg"
+                              />English
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="de" />
+                          <label for="de" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/de.svg"
+                              />Deutch
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="pl" />
+                          <label for="pl" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/pl.svg"
+                              />Polski
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="by" />
+                          <label for="by" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/by.svg"
+                              />Беларуская
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="fr" />
+                          <label for="fr" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                              />Français
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="in" />
+                          <label for="in" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/in.svg"
+                              />भारतीय
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="cn" />
+                          <label for="cn" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/cn.svg"
+                              />
+                              <div class="china-lang">中国人</div>
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="th" />
+                          <label for="th" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/th.svg"
+                              />
+                              ไทย
+                            </div></label
+                          >
+                        </div>
+                        <div class="select__option-wrapper">
+                          <input class="select__radio" type="radio" id="jp" />
+                          <label for="jp" class="select__option"
+                            ><div class="select__with-img">
+                              <img
+                                class="select_option_img"
+                                src="https://flagicons.lipis.dev/flags/4x3/jp.svg"
+                              />
+                              <div class="china-lang">日本</div>
+                            </div></label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__login">
+                <img
+                  src="img/svg/ui/user.svg"
+                  alt=""
+                  class="header__login-img"
+                />
+                <div class="header__login-links">
+                  <a href="" class="login__link">Вход</a>
+                  <div class="header__login-separator">|</div>
+                  <a href="" class="login__link">Регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="faq">
+      <div class="faq__wrapper">
+        <div class="container">
+          <div class="faq__header">
+            <div class="faq__header-title">Вопросы и ответы</div>
+            <div class="faq__header-text">
+              На этой странице мы собрали самые
+              <span class="text__bold">часто задаваемые вопросы</span>
+              касающиеся нашего проекта и инвестиций
+            </div>
+          </div>
+        </div>
+        <div class="faq__content">
+          <div class="faq__questions-wrapper">
+            <div class="faq__quersion-item">
+              <input type="checkbox" class="question__checkbox" id="q1" />
+              <label for="q1" class="question__label">
+                <span class="question__label-text">Что умеет этот сервис?</span>
+                <div class="question__label-arrow">
+                  <div class="qoverflow">
+                    <div class="qbox"></div>
+                  </div>
+                </div>
+              </label>
+              <div class="quetion__answer-wrapper">
+                <div class="question__answer">
+                  - Если вы опытный инвестор со своим планом – обратите внимание
+                  на функционал Свой портфель - Платформа поможет вам следить за
+                  эффективностью собственных инвестиционных решений и сравнивать
+                  доходность с бенчмарком. Фиксируйте сделки, оценивайте
+                  результаты, следите за компаниями в портфеле.
+                  <br />
+                  <br />
+                  - Если вы только начинаете или нет времени на глубокое
+                  изучение рынка – доверьтесь Советнику. Система сформирует
+                  надежный портфель из известных, успешных компаний. Вам
+                  останется лишь купить их. Никаких ежедневных сигналов,
+                  никакого трейдинга. Только лучшие компании, с проверенной
+                  историей и лидирующими позициями на рынке. Долгосрочное
+                  инвестирование, с потенциалом доходности выше рынка.
+                </div>
+              </div>
+              <div class="question__underline"></div>
+            </div>
+            <div class="faq__quersion-item">
+              <input type="checkbox" class="question__checkbox" id="q2" />
+              <label for="q2" class="question__label">
+                <span class="question__label-text"
+                  >Почему стоит попробовать?</span
+                >
+                <div class="question__label-arrow">
+                  <div class="qoverflow">
+                    <div class="qbox"></div>
+                  </div>
+                </div>
+              </label>
+              <div class="quetion__answer-wrapper">
+                <div class="question__answer">
+                  - 30 дней вы можете пользоваться платформой абсолютно
+                  бесплатно. Приятный интерфейс, удобный функционал, полезная
+                  аналитика, никакой привязки карты или подобных данных.
+                  Посмотрите, проверьте работу в деле, вам понравится.
+                </div>
+              </div>
+              <div class="question__underline"></div>
+            </div>
+            <div class="faq__quersion-item">
+              <input type="checkbox" class="question__checkbox" id="q3" />
+              <label for="q3" class="question__label">
+                <span class="question__label-text">Какой доход я получу?</span>
+                <div class="question__label-arrow">
+                  <div class="qoverflow">
+                    <div class="qbox"></div>
+                  </div>
+                </div>
+              </label>
+              <div class="quetion__answer-wrapper">
+                <div class="question__answer">
+                  - Рынок акций и инвестиции в акции – это не банковский вклад.
+                  Важно понимать ключевую разницу. Тут нет гарантий доходности,
+                  и никто вам их не даст. Исследования показывают, что при
+                  долгосрочном инвестировании, доходность от вложений в акции
+                  многократно превосходит доходы от банковских вкладов, и все
+                  же, стоит подходить к этому вопросу обдуманно.
+                  <br />
+                  <br />
+                  Задача платформы – помочь вам сделать разумный выбор и вложить
+                  средства в надежные компании. Дать возможность увидеть свою
+                  стратегию в новом качестве, в сравнении с бенчмарками.
+                </div>
+              </div>
+              <div class="question__underline"></div>
+            </div>
+            <div class="faq__quersion-item">
+              <input type="checkbox" class="question__checkbox" id="q4" />
+              <label for="q4" class="question__label">
+                <span class="question__label-text"
+                  >Сколько мне нужно инвестировать?</span
+                >
+                <div class="question__label-arrow">
+                  <div class="qoverflow">
+                    <div class="qbox"></div>
+                  </div>
+                </div>
+              </label>
+              <div class="quetion__answer-wrapper">
+                <div class="question__answer">
+                  - Дорога длиной в тысячу миль начинается с первого шага.
+                  Откладывайте, сколько можете. Вы можете начать инвестировать
+                  при накоплениях от 300$ и начав, не останавливайтесь. Это
+                  хорошая привычка.
+                </div>
+              </div>
+              <div class="question__underline"></div>
+            </div>
+            <div class="faq__quersion-item">
+              <input type="checkbox" class="question__checkbox" id="q5" />
+              <label for="q5" class="question__label">
+                <span class="question__label-text"
+                  >Это безопасно? Какие гарантии?</span
+                >
+                <div class="question__label-arrow">
+                  <div class="qoverflow">
+                    <div class="qbox"></div>
+                  </div>
+                </div>
+              </label>
+              <div class="quetion__answer-wrapper">
+                <div class="question__answer">
+                  - Инвестиции в акции не могут считаться безопасным или
+                  гарантированным источником доходов. Это всегда риск. Со своей
+                  стороны мы гарантируем, что не храним никакие ваши данные и не
+                  производим никаких операций, не имея абсолютно никаких
+                  доступов к вашим накоплениям.
+                </div>
+              </div>
+              <div class="question__underline"></div>
+            </div>
+            <div class="faq__quersion-item">
+              <input type="checkbox" class="question__checkbox" id="q6" />
+              <label for="q6" class="question__label">
+                <span class="question__label-text"
+                  >Хочу поторговать месяц-два – что посоветуете?</span
+                >
+                <div class="question__label-arrow">
+                  <div class="qoverflow">
+                    <div class="qbox"></div>
+                  </div>
+                </div>
+              </label>
+              <div class="quetion__answer-wrapper">
+                <div class="question__answer">
+                  - Воспользуйтесь виртуальными эмуляторами и поторгуйте на них.
+                  Не спешите расставаться с реальными деньгами. Если ваш план
+                  действительно хорош, вы добьетесь успеха. А если нет –
+                  сохраните накопленное.
+                </div>
+              </div>
+              <div class="question__underline"></div>
+            </div>
+            <div class="question__info">
+              <div class="question__info-title">Остались вопросы?</div>
+              <div class="question__info-text">
+                В правом нижнем углу иконка саппорта – стучите. Если не нашли –
+                пишите на почту
+                <a
+                  href="mailto:bmpartners@beatmarket.one"
+                  class="contact__link contact__link--bold"
+                  >bmpartners@beatmarket.one</a
+                >
+                или в
+                <a href="" class="contact__link contact__link--bold">телеграм</a
+                >.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="main__logo">
+                <a href="" class="main__logo-link">
+                  <img
+                    src="img/svg/main_logo.svg"
+                    alt=""
+                    class="main__logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__cooperation">
+                <div class="cooperation__text">Сотрудничество:</div>
+                <a
+                  href="mailto:bmpartners@beatmarket.one"
+                  class="contact__link contact__link--bold"
+                  >bmpartners@beatmarket.one</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <div class="footer__rights">
+                BeatMarket by
+                <a href="" class="inline__text-link">Montis Group</a>
+                2021.<br />
+                Все права защищены
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__rights">
+                Индивидуальный предприниматель Дьяконов Максим Сергеевич ИНН
+                503010875297 ОГРН 318774600266905 от 17 мая 2018 г Россия, г.
+                Москва, г. Московский, ул. Атласова д.3, пом.146, +79255427889
+              </div>
+            </div>
+          </div>
+          <div class="footer__line">
+            <div class="footer__item">
+              <a href="" class="contact__link">Пользовательское соглашение</a>
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+            <div class="footer__item">
+              <a href="" class="contact__link">Оферта регулярных платежей</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/select_menu.js"></script>
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/open_close.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

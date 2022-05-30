@@ -565,3 +565,7 @@ button {
 .tarif__card-to-hover {
   height: 100%;
 }
+
+.tarif__button {
+  cursor: pointer;
+}

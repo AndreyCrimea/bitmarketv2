@@ -804,10 +804,6 @@
     padding-top: 60px;
   }
 
-  .tarif__card-content-text {
-    padding-top: 40px;
-  }
-
   .tarif__button {
     padding: 29px 55px;
     background-color: var(--white);
@@ -821,7 +817,7 @@
     color: var(--blue);
   }
 
-  .tarif__card-to-hover:hover .tarif__circle-circle {
+  .tarif__card-main:hover .tarif__circle-circle {
     height: 276px;
     width: 276px;
 
@@ -829,34 +825,28 @@
     right: -138px;
   }
 
-  .tarif__card-to-hover:hover .tarif__button {
+  .tarif__card-main:hover .tarif__button {
     background-color: var(--blue);
     color: var(--white);
     box-shadow: 0px 21px 22px -13px rgba(62, 84, 216, 0.51);
     border: none;
   }
 
-  .tarif__card-to-hover {
-    position: relative;
-  }
-
-  .tarif__card {
-    height: 401px;
-    transition: 0.3s;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-
-  .tarif__card-to-hover:hover .tarif__card {
-    transition: 0.3s;
-    top: -10px;
-    left: -10px;
-
+  .tarif__card-main:hover .tarif__card {
+    transform: translate(-10px, -10px);
     box-shadow: 0px 18px 16px -13px rgba(62, 84, 216, 0.22);
   }
 
-  .tarif__card-to-hover {
-    height: 401px;
+  .tarif__card {
+    transition: 0.3s;
+    height: 100%;
+  }
+
+  .tarif__card-main {
+    cursor: pointer;
+  }
+
+  .tarif__card-content-text {
+    padding-top: 40px;
   }
 }

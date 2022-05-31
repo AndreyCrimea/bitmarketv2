@@ -148,7 +148,10 @@
 
   .starter__header-text {
     font-weight: 700;
-    font-size: 64px;
+
+    /* font-size: 64px; */
+    font-size: max(min(64px, 5.5vw), 48px);
+
     line-height: 125%;
   }
 
@@ -733,7 +736,7 @@
     justify-content: center;
   }
 
-  .faq__questions-wrapper {
+  .faq__question-wrapper {
     background-color: var(--white);
     border-radius: 20px;
 
@@ -767,10 +770,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-  }
-
-  .question__checkbox:checked ~ .quetion__answer-wrapper {
-    max-height: 400px;
   }
 
   .tarifs__wrapper {
@@ -848,5 +847,241 @@
 
   .tarif__card-content-text {
     padding-top: 40px;
+  }
+
+  .question__text {
+    transition: height 0.3s ease;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .question__text-wrapper {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #d3e3ff;
+    transition: 0.3s ease;
+  }
+
+  .question__item[data-collapsed="true"] .question__text-wrapper {
+    padding-bottom: 0px;
+  }
+
+  .starter__crypto-wrapper {
+    display: flex;
+    align-items: center;
+
+    padding-top: 102px;
+    padding-bottom: 53px;
+  }
+
+  .starter__crypto-content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .crypto-info {
+    padding-bottom: 100px;
+  }
+
+  .platform-profs__wrapper {
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+
+  .platform-profs__cards {
+    padding-top: 100px;
+  }
+
+  .platform-profs__card-content-header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 160%;
+  }
+
+  .platform-profs__card-content-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .platform-profs__card {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  .platform-profs__cards {
+    display: flex;
+    flex-flow: column;
+    gap: 100px;
+  }
+
+  .platform-profs__card-content-header {
+    padding-top: 32px;
+  }
+
+  .platform-profs__card-content-text {
+    padding-top: 32px;
+  }
+
+  .platform-profs__card-img {
+    width: 100%;
+    height: auto;
+
+    border: 1px solid #d3e3ff;
+    box-shadow: 0px 44px 89px -17px rgba(62, 84, 216, 0.06);
+    border-radius: 36px;
+  }
+
+  .platform-profs__card-img-wrapper {
+    width: 35%;
+  }
+
+  .platform-profs__card-content {
+    width: 65%;
+  }
+
+  .cryptos__wrapper {
+    gap: 50px;
+    position: relative;
+  }
+
+  .cryptos__img-wrapper {
+    position: relative;
+    width: 40%;
+  }
+
+  .cryptos__img {
+    position: absolute;
+    /* margin: auto; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-20%);
+  }
+
+  .cryptos__wrapper {
+    padding: 50px 0px;
+  }
+
+  .cryptos__content-text-underlined {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    width: fit-content;
+  }
+
+  .cryptos__content-text-underlined-wrapper {
+    margin-left: 45%;
+
+    padding-top: 40px;
+  }
+
+  .cryptos__content {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    width: 60%;
+  }
+
+  .cryptos__content-text {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 150%;
+
+    margin-left: 45%;
+  }
+
+  .cryptos__button {
+    padding-top: 40px;
+    margin-left: 45%;
+  }
+
+  .whywe-choose__wrapper {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  .cryptos__yellow-circle {
+    position: absolute;
+    height: 224px;
+    width: 224px;
+    border-radius: 200px 200px 0 0;
+    background-color: #f3b63f;
+    z-index: 1;
+    top: -30%;
+    left: 20%;
+  }
+
+  .cryptos__red-circle {
+    position: absolute;
+    height: 122px;
+    width: 122px;
+    border-radius: 50%;
+    z-index: 3;
+    background-color: #ed6373;
+    bottom: -80px;
+    right: 20%;
+  }
+
+  .cryptos__white-wrapper {
+    z-index: 2;
+  }
+
+  .whywe-choose__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+  }
+
+  .whywe-choose__join {
+    text-align: center;
+  }
+
+  .whywe-choose__card-img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .whywe-choose__card-img-wrapper {
+    position: relative;
+    padding: 50% 0;
+    background-color: var(--white);
+    border: 1px solid #e6eeff;
+    box-shadow: 0px 44px 89px -17px rgba(62, 84, 216, 0.12);
+    border-radius: 36px;
+  }
+
+  .whywe-choose__card-wrap {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .whywe-choose__cards {
+    display: flex;
+    gap: 24px;
+
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .whywe-choose__card-content-header {
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .whywe-choose__card-content-text {
+    padding-top: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
   }
 }

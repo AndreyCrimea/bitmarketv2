@@ -49,4 +49,18 @@ window.onload = () => {
     false
   );
   // HEADER initialize END -----------------
+
+  // FAQ initialize start ---------------
+  var expandjs = null;
+  if (typeof ExpandJS === "function") {
+    expandjs = new ExpandJS(
+      ".question__item",
+      ".question__label",
+      ".question__text"
+    );
+    console.log("expandJS inited...");
+  } else {
+    console.log("expandJS NOT inited...");
+  }
+  // FAQ initialize end ---------------
 };

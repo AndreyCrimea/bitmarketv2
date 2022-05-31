@@ -22,6 +22,12 @@
     #ffffff 0%,
     #eaf1fe 100%
   );
+
+  --light-blue-gradient-bottomto: linear-gradient(
+    0deg,
+    #ffffff 0%,
+    #eaf1fe 100%
+  );
 }
 
 .body {
@@ -406,7 +412,7 @@ button {
 
   overflow: hidden;
 
-  rotate: -180deg;
+  transform: rotate(-180deg);
   transition: 0.3s;
 }
 
@@ -451,11 +457,11 @@ button {
   border-bottom: 1px solid #d3e3ff;
 }
 
-.question__checkbox:checked ~ .question__label .qoverflow {
-  rotate: 0deg;
+.question__item[data-collapsed="false"] .qoverflow {
+  transform: rotate(0deg);
 }
 
-.question__checkbox:checked ~ .question__label .qbox {
+.question__item[data-collapsed="false"] .qbox {
   background-color: var(--blue);
 }
 
@@ -568,4 +574,35 @@ button {
 
 .tarif__button {
   cursor: pointer;
+}
+
+.starter__crypto {
+  background-color: var(--light-blue-bg);
+}
+
+.crypto-info {
+  background: var(--light-blue-gradient-tobottom);
+}
+
+.platform-profs {
+  background-color: var(--light-blue-bg);
+}
+
+.whywe-choose {
+  background: var(--light-blue-gradient-bottomto);
+}
+
+.cryptos {
+  position: relative;
+}
+
+.cryptos__white-wrapper {
+  background-color: var(--white);
+  position: relative;
+  border: 1px solid #d3e3ff;
+  width: 100%;
+}
+
+.text600 {
+  font-weight: 600;
 }
